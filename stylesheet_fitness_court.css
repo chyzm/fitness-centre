@@ -19,7 +19,7 @@ header{                   /*Gets items within the header tag to be on on one lin
 
 .bg{        /*The first background image on the home page*/
     background-image: url(c:/Users/User/Desktop/SUAVEDEF/IT/Fitness-Court-Project/img/pngtree-black-and-white-gym-room-with-a-row-of-equipment-image_2911173.jpg);
-    width: 1400px;
+    width: 100%;
     background-size: cover;
     background-position: center;          
     background-repeat: no-repeat;
@@ -241,17 +241,17 @@ h2{           /*styles all h2 elements*/
  
   display: flex;
   justify-content: center;
-  width: 1300px;
+  width: 100%;
   padding: auto;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-right: 0;
+  margin-left: 0;
   gap: 10px;
 
 }
 .sub-1{            /*styling of the third section*/
     background-color: rgba(13, 87, 13, 0.889);
     color: #041304;
-    width: 1300px;
+    width: 100%;
     height: 500px;
     margin: 40px 100px;
     padding-bottom: 15px;
@@ -260,27 +260,16 @@ h2{           /*styles all h2 elements*/
 }
 
 .image1{  /*image 2 of third section on home page*/
-    margin: 50px 0;
-    width: 400px;
-    padding-right: 150px;
-    justify-content: right;
+    margin: 0;
 }
 
 .image2{     /*image 1 of third section on home page*/
-    margin: 50px 0;
-    margin-right: 300px;
-    width: 400px;
-    padding-right: 100px;
+    margin: 0;
 
    
 }
 .image3{          /*image 3 of the third section on the home page*/
-    margin: 50px 0;
-    padding: 0;
-    width: 400px;
-    margin-left: 100px;
-    padding-right:200px;
-
+    margin: 0;
 }
 
 .image4{  /*image 2 of third section on home page*/
