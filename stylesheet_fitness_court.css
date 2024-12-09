@@ -1,525 +1,137 @@
-
-*{
-    scroll-behavior: smooth;  /*initiates smooth scroll from the button on the home page*/
-}
-
-body{
-    width: 100%;
-    max-width: 500px;
- 
-}
-
-
-header{                   /*Gets items within the header tag to be on on one line*/
-    display: flex;
-    width: 100%;
-    height: 1300px;
+body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.bg{        /*The first background image on the home page*/
-    background-image: url(c:/Users/User/Desktop/SUAVEDEF/IT/Fitness-Court-Project/img/pngtree-black-and-white-gym-room-with-a-row-of-equipment-image_2911173.jpg);
-    width: 100%;
-    background-size: cover;
-    background-position: center;          
-    background-repeat: no-repeat;
-    height: 600px;
-    padding: auto;
-    margin-left: 50px;
-    background-color: transparent;
-    overflow: hidden;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.sleeve {   /*Black transparent shadow over the first background image on the home page*/
-    width: 1400px;
-    height: 200px;
-    background-color: rgba(0,0,0,0.5);
-    background-position: center;
-    margin-top: -175px;
-  }
-
-
-.bg-about{    /*First background image on the about page*/
-    background-image: url(c:/Users/User/Desktop/SUAVEDEF/IT/Fitness-Court-Project/img/fitness-computer-desktop-backgrounds-wallpaper-preview.jpg);
-    width: 1400px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 305px;
-    padding: auto;
-    margin-left: 50px;
-    background-color: transparent;
-    overflow: hidden;
-}
-
-.bg-services{   /*first background image on the services page*/
-    background-image: url(c:/Users/User/Desktop/SUAVEDEF/IT/Fitness-Court-Project/img/istockphoto-612833494-612x612.jpg);
-    width: 1400px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 305px;
-    padding: auto;
-    margin-left: 50px;
-    background-color: transparent;
-    overflow: hidden;
-    object-fit: cover;
-}
-
-.bg-contact{                /*first background image on the contact page*/
-    background-image: url(c:/Users/User/Desktop/SUAVEDEF/IT/Fitness-Court-Project/img/Gym-structure-1080x675.png);
-    width: 1400px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 305px;
-    padding: auto;
-    margin-left: 50px;
-    background-color: transparent;
-    overflow: hidden;
-    object-fit: cover;
-}
-
-.head{       /*The first green transparent box with a text on the home page*/
-    background-color: rgba(13, 87, 13, 0.889);
-    width: 1100px;
-    height: 250px;
-    background-position: absolute;
-    background-repeat: no-repeat;
-    padding-right: 70px;
-    margin-top: 150px;
-    margin-left: 120px;
-}
-
-.center{    /*styles the second contact button on the home page*/
-    text-align: center;
+header {
+    flex-direction: column;
     align-items: center;
-    margin: 80px 100px;
-    padding-top: 50px;
-    font-size: larger;
-    font-weight: 400;
-    font-family: times 'Times New Roman', Times, serif;
-    color:antiquewhite;
-}
-
-.button{       /*styles the link buttons on the pages*/
-    text-decoration: none;
-    align-items: center;
-    /*display: block;*/
-    justify-content: center;
     text-align: center;
-    color: antiquewhite;
 }
 
-.button-1{ /*styles the link buttons on the second section of the home page*/
-    text-decoration: none;
-    align-items: center;
-    color: antiquewhite;
-}
-
-button{         /*styles the link buttons on the pages*/
-    border: 5px solid rgb(244, 238, 238);
-    background-color: rgba(13, 87, 13, 0.889);
-    text-decoration: none;
-    color: antiquewhite;
-    margin-top: 20px;
-}
-
-.navigate{     /*creates space between the page links and aligns them*/
-    justify-content:space-between;
-    text-align: end;
-    margin-top: 100px;
-    width: 1200px;
-}
-
-.anchor{   /*appearance of the page links*/
-    text-decoration: none;
-    color: white;
-    margin: 10px;
-    font-size: x-large;
-    font-family: sans-serif;
-}
-
-/*a:visited{
-    color: blue;
-}*/
-   
-.image1{     /*styles the logo*/
-    margin-left: 15px;
-    margin-top: 10px;
-    position: absolute;
-    padding-left: 10px;
-}
-
-.anchor:hover{   /*creates a hover effect when the cursor hovers over a link*/
- background-color: black;
- color: antiquewhite;
- cursor: pointer;
-}
-
-.button:hover{    /*creates an effect when cursor hovers over a submit button*/
-    background-color: antiquewhite;
-    color: rgba(13, 87, 13, 0.889);
-}
-
-.button-1:hover{
-    background-color: antiquewhite;
-    color: rgba(13, 87, 13, 0.889);
-}
-
-main{
-    width: 1400px;
-    margin-top: -130px;
-}
-
-.main-about{
-    width: 1400px;
-    margin-top: -10px;
-}
-
-.sub{     /*stlyes the second section of the home page*/
-    display: flex;
-    color: antiquewhite;
-    width: 1300px;
-    justify-content: center;
-    margin: 170px 100px;
-}
-
-.sub-head1{    /*second about us on the home page*/
-    background-color: rgba(13, 87, 13, 0.889);
-    width: 300px;
-    height: 60px;
-    background-size: cover;
-    background-position: left;
-   /** background-repeat: no-repeat;**/
-   justify-content: left;
-    margin: 70px 50px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-
-
-.sub-head2{         /*vision on the home page*/
-    background-color: rgba(13, 87, 13, 0.889);
-    width: 300px;
-    height: 60px;
-    background-size: cover;
-    background-position: center;
-   /** background-repeat: no-repeat;**/
-   justify-content: center;
-   margin: 70px 50px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.sub-head3{       /*the why choose us on the home page*/
-    background-color: rgba(13, 87, 13, 0.889);
-    width: 300px;
-    height: 60px;
-    background-size: cover;
-    background-position: right;
-   justify-content: right;
-   margin: 70px 50px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.sub-text{            /*changes the text color for the second section on the home page to black*/
-    color: black;
-}
-
-h2{           /*styles all h2 elements*/
-    text-align: center;
-    margin-top: 10px;
-    padding-top: 10px;
-    color: antiquewhite;
-    font-size: xx-large;
-}
-
-.service-image{     /* Third section of the home page with services.*/
- 
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: auto;
-  margin-right: 0;
-  margin-left: 0;
-  gap: 10px;
-
-}
-.sub-1{            /*styling of the third section*/
-    background-color: rgba(13, 87, 13, 0.889);
-    color: #041304;
-    width: 100%;
-    height: 500px;
-    margin: 40px 100px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    border-radius: 35px;
-}
-
-.image1{  /*image 2 of third section on home page*/
-    margin: 0;
-}
-
-.image2{     /*image 1 of third section on home page*/
-    margin: 0;
-
-   
-}
-.image3{          /*image 3 of the third section on the home page*/
-    margin: 0;
-}
-
-.image4{  /*image 2 of third section on home page*/
-    margin-top: -540px;
-    margin-bottom: 100px;
-    width: 400px;
-    padding-right: 150px;
-    justify-content: right;
-}
-
-figcaption{
-    text-align: justify;
-    color: antiquewhite;
-    font-size: larger;
-    margin-top: 10px;
-}
-
-.partners{        /*styling the partners image on at the footer*/
-    width: 100px;
-    height: 70px;
-    
-}
-
-.foot-2{  /*footer styling*/
-    display: flex;
-    width: 1300px;
+.image1 {
+    margin: 10px auto;
+    width: 200px;
     height: auto;
-    background-color: rgba(13, 87, 13, 0.889);
-    background-position: center;
-    margin-right: 200px;
-    margin-left: 100px;
-    margin-top: 100px;
-    margin-bottom: 0;
 }
 
-.footer{
-    display: flex;
-    width: 1300px;
-    height: auto;
-    justify-content: center;
-    padding-top: auto;
-    padding-bottom: auto;
-    margin-bottom: 0;
-    margin-top: 15px;
-    gap: 200px;
-    color: antiquewhite;
-}
-.foot{ /*footer styling*/
-    justify-content: center;
-    margin-left: 100px;
-    padding: auto;
-    width: 400px;
-}
-
-address{
-    justify-content: center;
-    font-size: large;
-    padding: auto;
-}
-
-.last{    /*last text on home page and contact page*/
+.navigate {
+    flex-wrap: wrap;
     text-align: center;
-    background-color: rgba(119, 244, 119, 0.889);
-    width: 1300px;
-    color: black;
-    margin-left: 100px;
-    margin-top: 0;
+    margin: 20px 0;
+    width: auto;
 }
 
-.last-1{  /*last text on services and about pages*/
-    text-align: center;
-    background-color: rgba(119, 244, 119, 0.889);
-    width: 1300px;
-    color: black;
-    margin-left: 100px;
-    margin-top: 30px;
-}
-
-.about{  /*position of the about text on the about page*/
-   
-    margin-top: -25px ;
-    padding-bottom: 5px;
-    text-align: left;
-    width: 150px;
-    color: antiquewhite;
-}
-
-.anchor-2{ /*link decoration on the about, servives and contact page*/
-    text-decoration: none;
-    color: white;
-    margin: 0 10px;
-    font-size: large;
-    width: 300px;
-    
-}
-
-.anchor-2:hover{  /*hover effect on links on about,services and contact page*/
-    background-color: black;
- color: antiquewhite;
- cursor: pointer;
-}
-
-.nav-about{   /*services page*/
-    color: antiquewhite;
-    justify-content:space-between;
-    text-align: end;
-    width: 900px;
-    margin-top: -75px;
-    margin-left: 350px;
-}
-
-.nav-color{          /*services page*/
-    background-color: rgba(13, 87, 13, 0.889);
-    width: 1400px;
-    height: 60px;
-    margin-top: 250px;
-
-}
-
-.body-about{      /*body of the about page*/
-   
-    color: black;
-    width: 900px;
-    height: auto;
-    margin: 30px 45px;
-    padding: 30px 15px;
-    border-radius: 20px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.vision{      /*vision section on the about page*/
-    text-align: center;
-    font-size: larger;
-    margin-top: 40px;
-    background-color: rgba(13, 87, 13, 0.889);
-    color: antiquewhite;
-}
-
-.list{    /*list on the about and service page*/
-    font-weight: bolder;
-    margin: 10px 0;
-}
-
-.service-list-1{   /*service page*/
-   
-    font-size: x-large;
-    margin-bottom: 350px;
-    
-}
-
-.service-list-A{  /*style the font size of the about page*/
-   
-    font-size: x-large;
-    margin-bottom: 50px;
-    
-}
-
-.service-list-2{  /*styles the body of the service page*/
-    width: 700px;
-    margin: 100px;
-    height: 5rem;
-    font-size: x-large;
-    justify-content: left;
-}
-
-.side{          /*seconf image by the side of the about page*/
-    width: 600px;
-    height: 760px;
-    padding: 30px 0;
-    margin-top: 135px;
-    border-radius: 20px;
-    background-image: url(c:/Users/User/Desktop/SUAVEDEF/IT/Fitness-Court-Project/img/Untitled-design.png);
-    background-size: cover;
-    box-shadow: 0 0 10px 12px lightblue;
-}
-
-.about-1{            /*the body of the about page*/
-   display: flex;
-   width: 1400px;
-}
-
-.bg-services-2{    /*the second image by the side on the service page*/
-    width: 570px;
-    height: 750px;
-    padding: 30px 0;
-    margin-top: 15px;
-    border-radius: 20px;
-    background-image: url(c:/Users/User/Desktop/SUAVEDEF/IT/Fitness-Court-Project/img/Untitled-design-1.png);
-    background-size: cover;
-    justify-content: end;
-}
-
-
-.body-services{      /*display styling for the body of the service page*/
-    display: flex;
-    gap: 10px;
-    width: 1400px;
-}
-
-li{
-    margin-bottom: 20px;
-}
-
-fieldset{
-    width: 400px;
-    height: 460px;
-    margin-top: 20px;
-    margin-left: 170px;
-    background-color: rgba(13, 87, 13, 0.889);
-    color: antiquewhite;
-}
-
-input{
-    width:350px;
-    height: 20px;
-    margin: 15px 0;
-}
-
-textarea{
-    width: 350px;
-}
-
-.contact-1{             /*contact page*/
-    display: flex;
-    width: 1400px;
-}
-
-.contact-1-1{                       /*contact page*/
-    justify-content: left;
-    margin-left: 90px;
-    margin-top: 20px;
-}
-
-.contact-1-2{                 /*contact page*/
-    justify-content: end;
-    margin-left: 90px;
-}
-
-.inline{                     /*contact page*/
+.anchor {
     display: inline-block;
+    margin: 10px;
+    font-size: 18px;
 }
 
-.inline-1{                     /*contact page*/
-    margin-left: 10px;
-    width: 15px;
+main {
+    width: 100%;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.sub {
+    flex-direction: column;
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.sub-head1,
+.sub-head2,
+.sub-head3 {
+    width: 80%;
+    margin: 20px auto;
     height: auto;
-    justify-content: left;
 }
 
-.service-home{                              /*blur radiuns and shadow effect on the 3 service images on the home page*/
-    box-shadow: 0 0 7px 10px lightgrey;
+.footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+address {
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.service-home {
+    width: 90%;
+    margin: 10px auto;
+    height: auto;
+    box-shadow: 0 0 5px 5px lightgray;
     border-radius: 10px;
+}
+
+
+/* Tablet Screens */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navigate {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .sub {
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .service-home {
+        width: 90%;
+        margin: 10px auto;
+        height: auto;
+    }
+}
+
+/* Mobile Screens */
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .anchor {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .sub-head1,
+    .sub-head2,
+    .sub-head3 {
+        width: 90%;
+        margin: 15px auto;
+        height: auto;
+    }
+
+    figcaption {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
 }
