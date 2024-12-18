@@ -1,0 +1,1 @@
+window.alert('Smash that fitness goal')

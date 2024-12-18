@@ -16,43 +16,97 @@
 </head>
 <body>
     <header class="container-fluid bg-light py-3">
-        <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center justify-content-between bg-img">
             <a href="index.html">
                 <img class="img-fluid" src="../img/FITNESS-LOGO.png" alt="logo" style="width: 200px;">
             </a>
             <nav class="d-none d-md-block">
-                <a href="index.html" class="mx-2 text-decoration-none">Home</a>
-                <a href="about.html" class="mx-2 text-decoration-none">About</a>
-                <a href="services.html" class="mx-2 text-decoration-none">Services</a>
-                <a href="contact.html" class="mx-2 text-decoration-none">Contact</a>
+                <a href="index.html" class="mx-2 text-decoration-none"><button class="nav-button">Home</button></a>
+                <a href="#about" class="mx-2 text-decoration-none"><button class="nav-button">About</button></a>
+                <a href="#services" class="mx-2 text-decoration-none"><button class="nav-button">Services</button></a>
+                <a href="contact.html" class="mx-2 text-decoration-none"><button class="nav-button">Contact</button></a>
             </nav>
             <button class="d-block d-md-none btn btn-primary">Menu</button>
         </div>
     </header>
     
     <main>
+        <section>
+          <div class="row">
+             <div class="col-md-6">
+                <img src="../img/cardio_workout_at_the_gym_2000x.jpg" width="100%" height="100%" class="img-1">
+              </div>
+             <div class="col-md-6">
+                <img src="../img/Untitled-design.png" width="100%" height="100%" class="img-1">
+             </div>
+          </div>
+        </section>
         <section class="container my-5">
             <div class="row text-center">
                 <div class="col-md-4">
-                    <h3>About Us</h3>
+                    <h3 class="bg-sub-head">About Us</h3>
                     <p>We are a foremost fitness brand with cutting-edge technology to meet your wellness and fitness goals.</p>
-                    <a href="About-Us.html" class="btn btn-outline-success">Learn More</a>
+                    <a href="#about" class="btn btn-outline-success">Learn More</a>
                 </div>
                 <div class="col-md-4">
-                    <h3>Vision</h3>
+                    <h3 class="bg-sub-head">Vision</h3>
                     <p>Our vision is to create an accessible bridge between the life of staying healthy and the people who want to stay healthy.</p>
-                    <a href="about.html#vision-section" class="btn btn-outline-success">Learn More</a>
+                    <a href="#vision" class="btn btn-outline-success">Learn More</a>
                 </div>
                 <div class="col-md-4">
-                    <h3>Why Join Fitness Court?</h3>
+                    <h3 class="bg-sub-head">Why Join Fitness Court?</h3>
                     <p>We hold you by the hand and walk the entire journey with you.</p>
-                    <a href="About-Us.html#why-join-us" class="btn btn-outline-success">Learn More</a>
+                    <a href="#why-join-us" class="btn btn-outline-success">Learn More</a>
                 </div>
             </div>
         </section>
+        <section class="about-1 service-list-A">
+            <div class="body-about">
+
+                <h3 class="text-center bg-sub-head" id="about">About Us</h3>
+
+              <h5>
+                Fitness Court gyms are a part of a growing trend in fitness that combines the benefits of outdoor exercise with the 
+                convenience of a well-designed workout environment. The concept originated from a movement to make fitness more accessible 
+                and engaging for people of all fitness levels. Here’s what you might find at a Fitness Court:
+              </h5>
+              <ul>
+                <li><span class="list">Outdoor Fitness Equipment:</span> Fitness Courts typically feature a variety of outdoor exercise stations designed to target 
+                    different muscle groups and fitness goals. This can include bodyweight exercises, cardio workouts, and flexibility training.</li>
+                <li><span class="list">Free to Use:</span> Many Fitness Courts are designed to be free and open to the public, aiming to remove barriers to exercise and 
+                    encourage community health and wellness.</li>
+                <li><span class="list">Workout Stations:</span> These are usually organized in a circuit format, allowing users to move from one exercise to another, 
+                    completing a full workout in a single session. Stations might include pull-up bars, step platforms, resistance bands, 
+                    and other equipment.</li>
+                <li><span class="list">Guidance and Instruction:</span> Some Fitness Courts offer digital or physical workout guides to help users understand 
+                    how to perform exercises correctly and effectively. This can be through signage, QR codes linking to workout videos, 
+                    or app-based instructions.</li>
+                <li><span class="list">Community Focus:</span> The design often incorporates elements that foster community engagement, such as group exercise areas, 
+                    spaces for social interaction, or events.</li>
+                <li><span class="list">Accessibility and Design:</span> The layout is usually designed to be inclusive, making it easy for people of varying abilities 
+                    to use the equipment. The courts are often built in parks, schools, or other public spaces.</li>
+              </ul>
+      
+              <h3>
+                <p class="vision bg-sub-head text-center" id="vision">VISION</p>
+              </h3>
+              <p>The vision behind Fitness Courts is to revolutionize the way people approach fitness by integrating 
+                  high-quality exercise solutions into everyday spaces, making fitness more accessible and engaging.</p>
+      
+              <h3>
+                <p class="vision bg-sub-head text-center" id="why-join-us">WHY CHOOSE US</p>
+              </h3>
+              <p>Choose us for a fitness solution that’s accessible, cost-effective, and community-focused. Our Fitness Courts offer free, 
+                  innovative outdoor workout equipment in convenient public spaces, promoting overall health and wellness. Enjoy versatile, 
+                  inclusive workouts with easy-to-follow guidance, all while engaging with your community and benefiting from eco-friendly design.</p>
+            </div>  
+            <div class="side">
+              <!-- Optional side image or content can go here -->
+            </div>
+          </section>
         
         <section class="container my-5">
-            <h2 class="text-center">Our Services</h2>
+            <h2 class="text-center bg-sub-head">Our Services</h2>
             <div class="row text-center">
                 <div class="col-sm-12 col-md-4 mb-3">
                     <img class="img-fluid" src="../img/Gym-structure-1080x675.png" alt="Gym">
@@ -66,6 +120,21 @@
                     <img class="img-fluid" src="../img/fruit.jpg" alt="Nutritional Counselling">
                     <figcaption>Nutritional Counselling</figcaption>
                 </div>
+
+                <!-- Services Section -->
+    <section class="services" id="services-section">
+      
+        <div class="service-list-2">
+          <ul>
+            <li><span class="list">Free Outdoor Fitness Facilities:</span> Access high-quality, versatile workout equipment at no cost, available in convenient public locations.</li>
+            <li><span class="list">Guided Workouts:</span> Utilize instructional signage and digital resources for effective and safe exercise routines.</li>
+            <li><span class="list">Community Engagement:</span> Participate in group workouts and fitness events that foster social interaction and motivation.</li>
+            <li><span class="list">Inclusive Design:</span> Enjoy equipment and facilities designed to accommodate all fitness levels and abilities.</li>
+            <li><span class="list">Sustainability Focus:</span> Benefit from eco-friendly facilities and practices that align with our commitment to environmental responsibility.</li>
+            <li><span class="list">Health and Wellness Programs:</span> Engage in programs and initiatives that promote overall well-being and a healthier lifestyle.</li>
+          </ul>
+        </div>
+      </section>
             </div>
         </section>
     </main>
@@ -93,5 +162,7 @@
         </div>
         <p class="text-center">DESIGNED BY: CHISOM OKARO ©2024</p>
     </footer>
+
+    <script src="./main.js"></script>
 </body>
 </html>
