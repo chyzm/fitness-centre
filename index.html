@@ -21,28 +21,29 @@
                 <img class="img-fluid" src="../img/FITNESS-LOGO.png" alt="logo" style="width: 200px;">
             </a>
             <!-- Collapsible Navigation -->
-            <nav class="d-none d-md-block">
+            <div class="d-none d-md-block">
                 <a href="index.html" class="mx-2 text-decoration-none"><button class="nav-button">Home</button></a>
                 <a href="#about" class="mx-2 text-decoration-none"><button class="nav-button">About</button></a>
                 <a href="#services" class="mx-2 text-decoration-none"><button class="nav-button">Services</button></a>
                 <a href="contact.html" class="mx-2 text-decoration-none"><button class="nav-button">Contact</button></a>
-            </nav>
+            </div>
             <!-- Mobile Menu Button -->
-            <button class="d-block d-md-none btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-            </button>
+            <div class="d-block d-md-none">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                </button>
+                <!-- Collapsible mobile menu -->
+                <div class="collapse" id="mobileNav">
+                    <div class="d-flex flex-column">
+                        <a href="index.html" class="mx-2 text-decoration-none"><button class="nav-button">Home</button></a>
+                        <a href="#about" class="mx-2 text-decoration-none"><button class="nav-button">About</button></a>
+                        <a href="#services" class="mx-2 text-decoration-none"><button class="nav-button">Services</button></a>
+                        <a href="contact.html" class="mx-2 text-decoration-none"><button class="nav-button">Contact</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-    
-    <!-- Collapsible mobile menu -->
-    <div class="collapse d-md-none" id="mobileNav">
-        <div class="d-flex flex-column">
-            <a href="index.html" class="mx-2 text-decoration-none"><button class="nav-button">Home</button></a>
-            <a href="#about" class="mx-2 text-decoration-none"><button class="nav-button">About</button></a>
-            <a href="#services" class="mx-2 text-decoration-none"><button class="nav-button">Services</button></a>
-            <a href="contact.html" class="mx-2 text-decoration-none"><button class="nav-button">Contact</button></a>
-        </div>
-    </div>
     
     
     <main>
