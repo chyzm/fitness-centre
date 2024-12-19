@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100vh;
 }
 
 body {
@@ -194,13 +195,13 @@ address {
 /* health calculator section*/
 .body-BMI {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f9;
   }
 
   .calculator {
@@ -219,24 +220,24 @@ address {
     color: #333;
   }
 
-  .input-BMI {
+  .input-BMI, textarea {
     width: calc(100% - 20px);
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
   }
 
   .button-BMI {
     background-color: #007bff;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
   }
 
   .button-BMI:hover {
@@ -248,3 +249,69 @@ address {
     font-size: 18px;
     color: #333;
   }
+
+  /*BMI RESULT*/
+  .body-result {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f9;
+    }
+
+    .result-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .h1-result {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .p-result {
+      font-size: 16px;
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .status {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .button-result {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .button-result:hover {
+      background-color: #0056b3;
+    }
+
+    .socials-logo {
+        font-size: 48px;
+        color: white;
+    }
+
+    .socials-logo-1 {
+        font-size: 48px;
+        color: black;
+    }
+

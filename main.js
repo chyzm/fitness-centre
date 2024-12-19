@@ -18,63 +18,35 @@ document.getElementById('back-to-top').addEventListener('click', function() {
 });
 
 // BMI calculator
-async function calculateBMI() {
+function submitBMI() {
     const fullName = document.getElementById('fullName').value;
-    const age = parseInt(document.getElementById('age').value);
+    const age = document.getElementById('age').value;
     const email = document.getElementById('email').value;
-    const weight = parseFloat(document.getElementById('weight').value);
-    const height = parseFloat(document.getElementById('height').value);
+    const weight = document.getElementById('weight').value;
+    const height = document.getElementById('height').value;
     const comments = document.getElementById('comments').value;
-    const resultDiv = document.getElementById('result');
 
-    if (!fullName || isNaN(age) || !email || isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
-      resultDiv.textContent = 'Please fill out all required fields with valid data.';
+    if (!fullName || !age || !email || !weight || !height) {
+      alert('Please fill out all required fields.');
       return;
     }
 
     const bmi = (weight / (height * height)).toFixed(2);
     let status;
 
-    if (bmi < 18.5) {
-      status = 'Underweight';
-    } else if (bmi >= 18.5 && bmi < 24.9) {
-      status = 'Normal weight';
-    } else if (bmi >= 25 && bmi < 29.9) {
-      status = 'Overweight';
-    } else {
-      status = 'Obese';
-    }
+    if (bmi < 18.5) status = 'Underweight';
+    else if (bmi < 24.9) status = 'Normal weight';
+    else if (bmi < 29.9) status = 'Overweight';
+    else status = 'Obese';
 
-    const userData = {
-      fullName: fullName,
-      age: age,
-      email: email,
-      bmi: bmi,
-      status: status,
-      comments: comments
-    };
+    const queryString = new URLSearchParams({
+      fullName,
+      age,
+      email,
+      bmi,
+      status,
+      comments
+    }).toString();
 
-    resultDiv.innerHTML = `<p>Name: ${fullName}</p>
-                           <p>Age: ${age}</p>
-                           <p>Email: ${email}</p>
-                           <p>Your BMI is ${bmi} (${status}).</p>
-                           ${comments ? `<p>Comments: ${comments}</p>` : ''}`;
-
-    try {
-      const response = await fetch('http://localhost:3000/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(userData)
-      });
-
-      if (response.ok) {
-        alert('BMI details sent successfully!');
-      } else {
-        alert('Failed to send email. Please try again later.');
-      }
-    } catch (error) {
-      alert('An error occurred: ' + error.message);
-    }
+    window.location.href = `result.html?${queryString}`;
   }
