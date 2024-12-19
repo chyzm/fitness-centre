@@ -18,7 +18,7 @@ document.getElementById('back-to-top').addEventListener('click', function() {
 });
 
 // BMI calculator
-function calculateBMI() {
+async function calculateBMI() {
     const fullName = document.getElementById('fullName').value;
     const age = parseInt(document.getElementById('age').value);
     const email = document.getElementById('email').value;
@@ -54,18 +54,27 @@ function calculateBMI() {
       comments: comments
     };
 
-    sendEmail(userData);
-
     resultDiv.innerHTML = `<p>Name: ${fullName}</p>
                            <p>Age: ${age}</p>
                            <p>Email: ${email}</p>
                            <p>Your BMI is ${bmi} (${status}).</p>
                            ${comments ? `<p>Comments: ${comments}</p>` : ''}`;
-  }
 
-  function sendEmail(data) {
-    const emailBody = `Name: ${data.fullName}\nAge: ${data.age}\nEmail: ${data.email}\nBMI: ${data.bmi} (${data.status})\nComments: ${data.comments}`;
+    try {
+      const response = await fetch('http://localhost:3000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(userData)
+      });
 
-    const mailtoLink = `mailto:chisomsomtochi@gmail.com?subject=BMI%20Calculation%20Result&body=${encodeURIComponent(emailBody)}`;
-    window.location.href = mailtoLink;
+      if (response.ok) {
+        alert('BMI details sent successfully!');
+      } else {
+        alert('Failed to send email. Please try again later.');
+      }
+    } catch (error) {
+      alert('An error occurred: ' + error.message);
+    }
   }
